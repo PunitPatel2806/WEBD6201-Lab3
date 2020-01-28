@@ -32,9 +32,15 @@ let app;
     function Main()
     {
 
+        
+
         document.getElementById('largeButton').innerHTML = 'Learn More';
 
-       
+        document.getElementById('firstParagraph').style.display = 'none';
+
+        let str = document.getElementById("firstParagraph").innerHTML; 
+        let res = str.replace("This simple site is the template you will use for your Test.", "JavaScript is a prototype-based language, and every object in JavaScript has a hidden internal property called Prototype that can be used to extend object properties and methods.");
+        document.getElementById("firstParagraph").innerHTML = res;
     }
 
 
